@@ -1,79 +1,58 @@
-      .cardContainer {
-        outline: 1px solid #aaa;
-        width: 350px;
-        height: 130px;
-        background-color: #ffd;
-        float: left;
-        margin: 5px;
-      }
-
-      .cardContainer img {
-        float: left;
-        margin: 10px;
-      }
-      body {
-        padding-top: 50px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-
-      .center{
-      margin:auto;
-      width:70%;
-      vertical-align: middle;
-      }
-
-      @media (max-width: 480px) {
-        /* Enable use of floated navbar text */
-        .navbar-text.pull-right {
-          float: none;
-          padding-left: 5px;
-          padding-right: 5px;
-        }
-      }
-
-  .picture { 
-    border-radius:0.7em; 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    height: 400px;
+.sidebar-nav {
+  padding: 9px 0;
+}
+.center{
+margin:auto;
+width:70%;
+vertical-align: middle;
+}
+@media (max-width: 480px) {
+  .navbar-text.pull-right {
+    float: none;
+    padding-left: 5px;
+    padding-right: 5px;
   }
-  .avatar { 
-    border-radius:100%; 
-    border-width:1px; 
-    border-style: dotted solid; 
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-  }
+}
+.picture { 
+  border-radius:0.7em; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 400px;
+}
+.avatar { 
+  border-radius:100%; 
+  border-width:1px; 
+  border-style: dotted solid; 
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
 
-  .author-avatar { 
-    border-radius:100%; 
-    border-width:1px; 
-    border-style: dotted solid; 
-    width: 75px;
-    height: 75px;
-  }
+.author-avatar { 
+  border-radius:100%; 
+  border-width:1px; 
+  border-style: dotted solid; 
+  width: 75px;
+  height: 75px;
+}
 
-  .centeredElement {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-  }
+.centeredElement {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
 
-  .caption { 
-    font-size:15px; 
-  }
-  .author { 
-    font-size: 22px;
-    font-weight: bold
-  }
-  .commenter {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center
-  }
+.caption { 
+  font-size:15px; 
+}
+.author { 
+  font-size: 22px;
+  font-weight: bold
+}
+.commenter {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center
+}
