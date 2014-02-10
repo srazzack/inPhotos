@@ -16,12 +16,12 @@ var cardsView = Backbone.View.extend({
 
     events: {
         "click #sf": "retrieveCards",
-            "click #la": "retrieveCards",
-            "click #ny": "retrieveCards",
-            "click #lv": "retrieveCards",
-            "click #sd": "retrieveCards",
-            "click #rc": "retrieveCards",
-            "click #sj": "retrieveCards"
+        "click #la": "retrieveCards",
+        "click #ny": "retrieveCards",
+        "click #lv": "retrieveCards",
+        "click #sd": "retrieveCards",
+        "click #rc": "retrieveCards",
+        "click #sj": "retrieveCards"
     },
 
     retrieveCards: function (evt, locationPreSet) {

@@ -22,9 +22,10 @@ var presentationView = Backbone.View.extend({
 
     events: {
         "click #prevCard": "showPrevious",
-            "click #pauseCardShow": "pause",
-            "click #nextCard": "showNext",
-            "click #playCardShow": "play"
+        "click #pauseCardShow": "pause",
+        "click #nextCard": "showNext",
+        "click .picture": "pause",
+        "click #playCardShow": "play"
     },
 
     keypressHandler: function (e) {
@@ -38,10 +39,6 @@ var presentationView = Backbone.View.extend({
         } else if (e.keyCode === 191) {
             this.pause();
         }
-    },
-
-    getCard: function () {
-        return this.collection.get($(e.currentTarget).attr("data-id"));
     },
 
     showPrevious: function () {
@@ -78,7 +75,7 @@ var presentationView = Backbone.View.extend({
 
         this.intervalId = setInterval(function () {
             self.playShow();
-        }, 500);
+        }, 1250);
 
     },
 
