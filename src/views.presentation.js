@@ -6,14 +6,14 @@ var presentationView = Backbone.View.extend({
     },
 
     initialize: function () {
-        console.log(this.collection.at(0));
-
-        console.log("--> in the presentationView!");
+        //binding keypress to the view
         $(document).bind("keyup", _.bind(this.keypressHandler, this));
+        //upon initialization, render the view
         this.render();
     },
 
     render: function () {
+        //we want to render only one photo card at a time
         var model = this.collection.at(this.currentCard);
         this.$el.find("#activeCard").html(this.templates["cardShow"]({
             model: model
@@ -78,7 +78,7 @@ var presentationView = Backbone.View.extend({
         }, 1250);
 
     },
-
+    //if the state is set to "pause", the slideshow should halt
     pause: function () {
         this.state = "paused";
     },

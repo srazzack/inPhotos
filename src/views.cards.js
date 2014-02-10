@@ -23,7 +23,8 @@ var cardsView = Backbone.View.extend({
         "click #rc": "retrieveCards",
         "click #sj": "retrieveCards"
     },
-
+    //retrieving data depends on location coordinates taken from the evt object
+    //or the locationPreSet object
     retrieveCards: function (evt, locationPreSet) {
         var location = locationPreSet || {
             lattitude: evt.currentTarget.attributes[2].nodeValue,
@@ -37,7 +38,7 @@ var cardsView = Backbone.View.extend({
             data: {}
         }).done(this.dataHandler);
     },
-
+    //adds the data to the collection for rendering
     dataHandler: function (data) {
         var cc = new CardsCollection();
         cc.add(data.data);
