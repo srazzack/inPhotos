@@ -1,14 +1,11 @@
 var Card = Backbone.Model.extend({
 
-    defaults: function () {
-        return {
-            caption: "", //attributes.caption.text,
-            comments: "", // attributes.comments.data,
-            image: "", // attributes.images.standard_resolution,
-            src: "", //attributes.link,
-            author: "" // {name: full_name, username: username, profile_picture: profile_picture}
-        }
-
+    defaults: {
+        caption: "", //attributes.caption.text,
+        comments: "", // attributes.comments.data,
+        image: "", // attributes.images.standard_resolution,
+        src: "", //attributes.link,
+        author: "" // {name: full_name, username: username, profile_picture: profile_picture}
     },
 
     initalize: function () {
@@ -16,6 +13,6 @@ var Card = Backbone.Model.extend({
     },
 
     validate: function () {
-
+        //no validation since source of models is dependant on an external object
     }
 });
